@@ -4,44 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
+      alt="blog-img"
+
     />
-    <link rel="stylesheet" href="style.css">
-    <title>Frontend Mentor | Blog preview card</title>
+    
+    <title>Frontend Mentor | Blog preview card| bootstrap</title>
   </head>
 
-  <body>
-    <main>
-      <div class="blog">
-        <div>
-          <img class="pic" src="./assets/images/illustration-article.svg" alt="blog-review" />
+  <body class="bg-warning">
+    <main class="d-flex align-items-center justify-content-center min-vh-100">
+      <div class="card d-flex align-items-center justify-content-center" style="width:360px; height: 530px;">
+        <div class="p-4">
+          <img class="rounded" style="width:300px;" src="./assets/images/illustration-article.svg" alt="blog-review" />
         </div>
-
-        <div class="textcontainer">
-          <p class="text1">Learning</p>
-          <p class="text2">
+        <div style="width:300px;">
+          <p class="bg-warning rounded-1 ps-2 fs-6 fw-bold" style="width: 80px; height: 25px;">Learning</p>
+          <p class="fs-6">
             Published 21 Dec 2023
           </p>
-          <p class="text3">HTML & CSS foundations</p>
-          <p class="text4">These languages are the backbone of every website, defining structure, content, and presentation.</p>
-          <section class="piccontainer">
-            <img class="avatar" src="./assets/images/image-avatar.webp" alt="avatar" />
-          <p class="name">Greg Hooper</p>
+          <p class="fw-bold">HTML & CSS foundations</p>
+          <p class="text-muted fs-6" ">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+          <section class="d-flex align-items-center justify-content-left">
+            <img class="" style="width:50px; height:50px;" src="./assets/images/image-avatar.webp" alt="avatar" />
+          <p class="px-4 my-4 fw-bold">Greg Hooper</p>
           </section>
         </div>
       </div>
     </main>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Eriko Kan</a>.
-    </div>
-  </body>
-</html>
+    
+
+  <div class="text-center fs-50">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Eriko Kan</a>.
+  </div>
+
+
+
